@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anas's Resume</title>
+    <link rel="icon" href="assets/images/cv.png" type="image/png" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI Plugin -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        plugins: [daisyui],
+        daisyui: {
+          themes: ["light", "dark"],
+        },
+      };
+    </script>
+    <!-- DaisyUI CDN (optional if not using a build process) -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" />
+    <!-- FontAwesome (for download icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body class="bg-base-100 text-base-content">
+
+    <nav class="navbar bg-base-200 shadow px-4" role="navigation">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl" href="/">Anas</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal p-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/" class="active">CV</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="flex-none ml-4">
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input id="theme-toggle" class="sr-only peer" type="checkbox" />
+            <div
+            class="w-16 h-8 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-md shadow-gray-400 peer-checked:shadow-md peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[2px] after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0">
+        </div>
+    
+            </div>
+          </label>
+        </div>
+      </nav>
+     
+
+    <!-- Main Content -->
+    <div class="container mx-auto p-4 max-w-4xl">
+      <!-- Header with Title and Download Button -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <h1 class="text-3xl font-bold">Anas's Resume</h1>
+        <a href="assets/resume/Anas-Alhamdan-Resume.pdf" download class="btn btn-primary">
+          <i class="fa-solid fa-download mr-2"></i>
+          Download CV
+        </a>
+      </div>
+<article>
+      <!-- Education Section -->
+      <section class="mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Education</h2>
+        <div class="border-l-4 border-primary pl-4">
+          <div class="mb-4">
+            <span class="badge badge-primary mb-2 inline-block">2021 - Present</span>
+            <h3 class="text-xl font-bold">Bachelor Degree in Computer Science</h3>
+            <p class="text-sm">King Saud University</p>
+            <p class="text-sm">Expected Graduation Date: Sep 2025</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies Section -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold mb-4">Technologies</h2>
+        <div class="flex flex-wrap gap-4">
+          <div class="w-20 h-20 p-2 border rounded-lg shadow flex items-center justify-center">
+            <img src="assets/images/python_icon.png" alt="Python Logo" title="Python" class="object-contain" />
+          </div>
+          <div class="w-20 h-20 p-2 border rounded-lg shadow flex items-center justify-center">
+            <img src="assets/images/JAVA_PIC.png" alt="Java Logo" title="Java" class="object-contain" />
+          </div>
+          <div class="w-20 h-20 p-2 border rounded-lg shadow flex items-center justify-center">
+            <img src="assets/images/numpy_pic.png" alt="NumPy Logo" title="NumPy" class="object-contain" />
+          </div>
+          <div class="w-20 h-20 p-2 border rounded-lg shadow flex items-center justify-center">
+            <img src="assets/images/sql_pic.png" alt="SQL Logo" title="SQL" class="object-contain" />
+          </div>
+        </div>
+      </section>
+<!-- Skills Section -->
+<section class="mt-12">
+    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Product Management -->
+      <div class="card shadow bg-base-200 flex flex-row items-center p-4">
+        <img src="assets/images/10608754.png" width="40px" alt="Product Management" class="mr-4"/>
+        <div class="card-body">
+          <h3 class="card-title">Product Management</h3>
+          <p>Roadmap Development, Market Research, Cross-functional Team Coordination, Product Lifecycle Management, Data-driven Strategy.</p>
+        </div>
+      </div>
+  
+      <!-- NLP & Machine Learning -->
+      <div class="card shadow bg-base-200 flex flex-row items-center p-4">
+        <img src="assets/images/microchip-ai.png" width="40px" alt="NLP & Machine Learning" class="mr-4"/>
+        <div class="card-body">
+          <h3 class="card-title">NLP &amp; Machine Learning</h3>
+          <p>Word Embedding Models, Semantic Analysis, Information Retrieval.</p>
+        </div>
+      </div>
+  
+      <!-- Data Analysis -->
+      <div class="card shadow bg-base-200 flex flex-row items-center p-4">
+        <img src="assets/images/data_logo.png" width="40px" alt="Data Analysis" class="mr-4"/>
+        <div class="card-body">
+          <h3 class="card-title">Data Analysis</h3>
+          <p>Pandas, NumPy, SQL.</p>
+        </div>
+      </div>
+  
+      <!-- Programming Languages -->
+      <div class="card shadow bg-base-200 flex flex-row items-center p-4">
+        <img src="assets/images/002-development.svg" width="40px" alt="Programming Languages" class="mr-4"/>
+        <div class="card-body">
+          <h3 class="card-title">Programming Languages</h3>
+          <p>Python, Java, HTML, CSS, SQL, LaTeX.</p>
+        </div>
+      </div>
+  
+      <!-- Tools & Platforms -->
+      <div class="card shadow bg-base-200 flex flex-row items-center p-4 md:col-span-2">
+        <img src="assets/images/square-terminal.png" width="40px" alt="Tools & Platforms" class="mr-4"/>
+        <div class="card-body">
+          <h3 class="card-title">Tools &amp; Platforms</h3>
+          <p>Git, Jupyter Notebooks.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+</article>
+      <!-- Inspirational Quote Section -->
+      <section class="mt-12">
+        <h2 class="text-2xl font-semibold mb-4">Inspirational Quotes</h2>
+        <div class="card shadow bg-base-200">
+          <div class="card-body">
+            <blockquote class="text-lg italic" id="quote-text">
+              "Click the button to generate an inspirational quote!"
+            </blockquote>
+            <p class="text-right mt-2" id="quote-author"></p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary" onclick="generateQuote()">Generate Quote</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-blue-600 text-white px-4 py-2 rounded-full shadow-md transition-all duration-300 hover:bg-blue-700">
+        ↑ Top
+    </button>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const backToTopButton = document.getElementById("back-to-top");
+    
+            // Scroll smoothly to the top when clicked
+            backToTopButton.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        });
+    </script>
+    <!-- Footer -->
+    <footer class="mt-12 text-center p-4">
+      <p>&copy; 2025 Anas. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+      // Dark Mode Toggle Script
+      const themeToggle = document.getElementById("theme-toggle");
+      function setTheme(theme) {
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+      }
+      // Check saved theme on load
+      if (localStorage.getItem("theme") === "dark") {
+        setTheme("dark");
+        themeToggle.checked = true;
+      } else {
+        setTheme("light");
+      }
+      themeToggle.addEventListener("change", function () {
+        setTheme(this.checked ? "dark" : "light");
+      });
+
+      // Inspirational Quote Generator
+      function generateQuote() {
+        const quotes = [
+          { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
+          { text: "Believe you can and you're halfway there.", author: "Theodore Roosevelt" },
+          { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
+          { text: "It always seems impossible until it's done.", author: "Nelson Mandela" },
+          { text: "You miss 100% of the shots you don’t take.", author: "Wayne Gretzky" },
+          { text: "Do what you can, with what you have, where you are.", author: "Theodore Roosevelt" },
+          { text: "The future belongs to those who believe in the beauty of their dreams.", author: "Eleanor Roosevelt" },
+          { text: "Hardships often prepare ordinary people for an extraordinary destiny.", author: "C.S. Lewis" },
+          { text: "If you want to lift yourself up, lift up someone else.", author: "Booker T. Washington" },
+          { text: "Act as if what you do makes a difference. It does.", author: "William James" }
+        ];
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        document.getElementById("quote-text").textContent = `"${quotes[randomIndex].text}"`;
+        document.getElementById("quote-author").textContent = `- ${quotes[randomIndex].author}`;
+      }
+    </script>
+  </body>
+</html>
